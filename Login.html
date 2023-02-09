@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login page</title>
+        <style>
+            *{margin:0;
+            Padding:0;
+        box-sizing: border-box;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+
+        .main_div{
+            width:100%;
+            height:100vh;
+            position: relative;
+               background-image: linear-gradient(#e02bca, #003eff);
+
+        }
+        .box{
+            width:400px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            background-color: rgba(0,0,0,0.8);
+            transform: translate(-50%,-50%);
+            padding:50px;
+            border-radius: 10px;
+        }
+
+        .box h1{
+            margin-bottom:40px;
+            text-align: center;
+            color:#FFF;
+            text-transform: capitalize;
+
+        }
+        .box .inputBox{
+            position: relative;
+        }
+        .box .inputBox input{
+            width:100%;
+            padding:10px;
+            font-size: 16px;
+            color:#FFF;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #FFF;
+            background: transparent;
+            outline: none;
+        }
+        
+        .box .inputBox label{
+            
+            top:0;
+            left:0;
+            letter-spacing: 1px;
+            padding: 10px,0px;
+            font-size: 14px;
+            color:chartreuse;
+            transition:0.5s;
+            position: absolute;
+        }
+        .box .inputBox input:focus ~ label,.box .inputBox input:valid ~ label{
+            top: -20px;
+            left :0;
+            color:chartreuse;
+            font-size: 12px;
+        }
+        
+
+
+
+        .box input[type="submit"]{
+            border:none;
+            outline: none;
+            padding:10px;
+            text-align: center;
+            margin-left :40%;
+            margin-right:40%;
+            color:#FFF;
+            background: transparent;
+            background-color: chartreuse;
+            font-size: 14px;
+        }
+
+        </style>
+    </head>
+    <body>
+
+  
+         <div class="main_div">
+            <div class="box">
+                <h1>Login Form</h1>
+
+                <form method="" action="">
+<div class="inputBox">
+    <input type="text" name="username" autocomplete="off" required>
+    <label>User Name</label>
+</div>
+<div class="inputBox">
+    <input type="password" name="password" autocomplete="off" required>
+    <label>Password</label>
+</div>
+<input type="submit" name="" value="Login">
+                </form>
+            </div>
+         </div>
+
+
+
+    </body>
+</html>
